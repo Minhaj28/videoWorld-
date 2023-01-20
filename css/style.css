@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('costom__fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('costom__fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('costom__fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('costom__fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open-sens', sans-serif;
+}
+body{
+    padding-top: 90px;
+    padding-left: 120px;
+    padding-right: 20px;
+}
+.video__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
+.video{
+    cursor: pointer;
+}
+.bx{
+    cursor: pointer;
+}
+@media (max-width:400px){
+    .video__container{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:600px){
+    .video__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:1000px){
+    .video__container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.video__thumbnail{
+    position: relative;
+}
+
+.video__thumbnail img{
+    width: 100%;
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+}
+.video__thumbnail img:hover{
+    transform: scale(1.1);
+}
+.video__thumbnail img:active{
+    opacity: .5;
+}
+
+.duration{
+    position:absolute;
+    background-color: black;
+    color: white;
+    right: 15px;
+    bottom: 15px;
+    padding: 1px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.video__lower{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 10px;
+}
+
+.channel__thumbnail{
+    width: 50px;
+}
+
+.channel__thumbnail img{
+    width: 100%;
+    border-radius: 30px
+}
+
+.video__info{
+    display: grid;
+}
+
+.description{
+    font-weight: 500;
+    margin-bottom: 10px ;
+}
+
+.channel, .analitics{
+    margin-bottom: 5px ;
+    color: gray;
+}
+

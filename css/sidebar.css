@@ -1,0 +1,31 @@
+.sidebar{
+    padding-top: 90px;
+    width: 100px;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(242,242,242);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.bx{
+    font-size: 30px;
+    border: none;
+    transition: all .2s ease-in-out;
+    margin-bottom: 3px;
+}
+.side__bx:hover{
+    transform: scale(1.3);
+}
+.side__bx:active{
+    opacity: .3;
+}
+
+

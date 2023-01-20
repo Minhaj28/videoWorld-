@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('costom__fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('costom__fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('costom__fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('costom__fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open-sens', sans-serif;
+}
+
+.video{
+    width: 350px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.video__thumbnail{
+    width: 350px;
+}
+
+.video__thumbnail img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.video__lower{
+    margin-top: 10px;
+    display: inline-block;
+}
+.video__info{
+    padding: 0 8px;
+    width: 295px;
+    display: inline-block;
+}
+.channel__thumbnail{
+    margin-top: 0;
+    width: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.channel__thumbnail img{
+  
+    width: 100%;
+    border-radius: 30px
+}
+
+.description{
+    font-weight: 500;
+    margin-bottom: 10px ;
+}
+
+.channel, .analitics{
+    margin-bottom: 5px ;
+    color: gray;
+}
+
